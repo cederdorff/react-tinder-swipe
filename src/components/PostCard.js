@@ -2,8 +2,7 @@ import { getAuth } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import UserAvatar from "./UserAvatar";
 import { usersRef } from "../firebase-config";
-import { arrayRemove, doc, onSnapshot, updateDoc } from "@firebase/firestore";
-import { useEffect, useState } from "react";
+import { arrayRemove, doc, updateDoc } from "@firebase/firestore";
 
 export default function PostCard({ post, showRemove }) {
     const navigate = useNavigate();
